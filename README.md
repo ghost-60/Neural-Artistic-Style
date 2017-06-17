@@ -6,10 +6,10 @@ Style transfer is the technique of recomposing images in the style of other imag
 
 
 ## Requirements
-  *Python3.5
-  *Tensorflow
-  *Keras
-  *Numpy
+  * Python3.5
+  * Tensorflow
+  * Keras
+  * Numpy
 
 ## How to run the code
 For Ubuntu users:
