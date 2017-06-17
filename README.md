@@ -16,12 +16,11 @@ You will need the following to run the above:
 For Ubuntu users:
 ```
 $ python3 vgg16.py <content_image_path> <style_image_path>
-
 ```
 ## Results
 Result based on 10 iterations:
 <p align = 'center'>
-<img src = 'images_transfered/result.jpg' height = '246px'>
+<img src = 'images_transfered/result.jpg'>
 </p>
 
 
