@@ -6,6 +6,7 @@ Style transfer is the technique of recomposing images in the style of other imag
 
 
 ## Requirements
+You will need the following to run the above:
   * Python3.5
   * Tensorflow
   * Keras
@@ -17,3 +18,9 @@ For Ubuntu users:
 $ python3 vgg16.py <content_image_path> <style_image_path>
 
 ```
+## Results
+Based on
+
+
+## Attributions/Thanks
+  * Some code was borrowed from Justin Johnson's [Fast Neural Style](https://github.com/jcjohnson/fast-neural-style)
