@@ -19,7 +19,10 @@ $ python3 vgg16.py <content_image_path> <style_image_path>
 
 ```
 ## Results
-Based on
+Result based on 10 iterations:
+<p align = 'center'>
+<img src = 'images_transfered/result.jpg' height = '246px'>
+</p>
 
 
 ## Attributions/Thanks
