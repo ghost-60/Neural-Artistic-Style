@@ -2,10 +2,10 @@ Choosing contents from the deep layers start losing too much structural details,
 
 ## block4_conv2
 <p align = 'center'>
-<img src = 'images_transfered/transferdblock4.jpg'>
+<img src = 'images_transfered/transferedblock4.jpg'>
 </p>
 
 ## block2_conv2
 <p align = 'center'>
-<img src = 'images_transfered/transferd.jpg'>
+<img src = 'images_transfered/transfered.jpg'>
 </p>
