@@ -23,6 +23,10 @@ Result based on 10 iterations:
 <img src = 'images_transfered/result.jpg'>
 </p>
 
+## Observations
+The following variations can be seen by changing the content to style weight ratio.
+[variations](https://github.com/vishalsingh020997/Style-Transfer/blob/master/variations.md)
+
 
 ## Attributions/Thanks
   * Some code was borrowed from Justin Johnson's [Fast Neural Style](https://github.com/jcjohnson/fast-neural-style)
