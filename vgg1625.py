@@ -17,8 +17,8 @@ from scipy.misc import imsave
 
 
 
-content_weight = 0.025
-style_weight = 5.0
+content_weight = 1
+style_weight = 0
 total_variation_weight = 1.0
 loss = backend.variable(0.)
 height = 512
@@ -32,7 +32,7 @@ def main():
 	
 	content_image = Image.open(sys.argv[1])
 	content_image = content_image.resize((height, width))
-
+	
 	style_image = Image.open(sys.argv[2])
 	style_image = style_image.resize((height, width))
 
@@ -66,7 +66,7 @@ def main():
 	layers = dict([(layer.name, layer.output) for layer in model.layers])
 	
 	# for content loss
-	layer_features = layers['block4_conv2']
+	layer_features = layers['block2_conv2']
 	content_image_features = layer_features[0, :, :, :]
 	combination_features = layer_features[2, :, :, :]
 
@@ -106,17 +106,18 @@ def main():
 		print('Current loss value:', min_val)
 		end_time = time.time()
 		print('Iteration %d completed in %ds' % (i, end_time - start_time))
+		y=x
+		y = y.reshape((height, width, 3))
+		y = y[:, :, ::-1]
+		y[:, :, 0] += 103.939
+		y[:, :, 1] += 116.779
+		y[:, :, 2] += 123.68
+		y = np.clip(y, 0, 255).astype('uint8')
+		output=Image.fromarray(y)
+		output.show()
+		
+		
 				             
-	x = x.reshape((height, width, 3))
-	x = x[:, :, ::-1]
-	x[:, :, 0] += 103.939
-	x[:, :, 1] += 116.779
-	x[:, :, 2] += 123.68
-	x = np.clip(x, 0, 255).astype('uint8')
-
-	output=Image.fromarray(x)
-	output.show()
-	output.save("./images_transfered/transferedblock4.jpg")
 
 		              
 	
