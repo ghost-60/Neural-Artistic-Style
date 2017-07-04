@@ -26,7 +26,7 @@ Result based on 10 iterations:
 ## Observations
 The following variations can be seen by changing some of the factors:
  * content-style weight ratio [see here](https://github.com/vishalsingh020997/Style-Transfer/blob/master/content-style_weight_variation.md)
- * extracting content features from different conv-net layers ratio [see here](https://github.com/vishalsingh020997/Style-Transfer/blob/master/content_layer.md)
+ * extracting content features from different conv-net layers ratio [see here](https://github.com/vishalsingh020997/Style-Transfer/blob/master/content_layer_variation.md)
 
 
 ## Attributions/Thanks
