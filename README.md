@@ -30,4 +30,4 @@ The following variations can be seen by changing some of the factors:
 
 
 ## Attributions/Thanks
-  * Some code was borrowed from Justin Johnson's [Fast Neural Style](https://github.com/jcjohnson/fast-neural-style)
+  * Some parts of code was borrowed from Justin Johnson's [Fast Neural Style](https://github.com/jcjohnson/fast-neural-style)
